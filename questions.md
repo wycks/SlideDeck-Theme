@@ -16,28 +16,26 @@ The idea is to have about a total of 40 questions, with some sub-questions.
 *  Something with functions.php
 *  Something with loop
 *  Page template
-*  Body class/post_class/omment_class
+*  Body class/post_class/comment_class
 *  Alter main loop
 *  Enqueue scripts
 
    
 # Intermediate
 
-* Add image size
+* Add image size & mage stuff
 * Add sidebar
 * File hierarchy - create some custom ones
-* http://codex.wordpress.org/Template_Tags
-* http://codex.wordpress.org/Function_Reference
+* Bunch of this http://codex.wordpress.org/Template_Tags
+* Some of this http://codex.wordpress.org/Function_Reference
 * wp_head and wp_footer
 * comment_template
 * CPT and Custom taxonomies
-* get_template _part
-* get plugin url or theme url
 * Multiple different loops
 * Multiple same loops
 * Style every 3rth loop
-* wp query
-* shortcodes
+* WP Query
+* Shortcodes
 * Custom fields
 
 
@@ -45,11 +43,13 @@ The idea is to have about a total of 40 questions, with some sub-questions.
 
 * Transients
 * Hooks and filters
+* Create Widgets
 * Filter wp-query
-* wpdb
+* WPDB
 * Rewrite
-* API (widget, http)
-* Plugins (settings and options) WP_List_Table
+* Other API's (widget, http)
+* Plugins (settings and options) WP_List_Table, etc.
+* Security nonce, escape stuff, etc.
 * Ajax
 
 
