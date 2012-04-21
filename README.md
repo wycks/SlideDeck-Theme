@@ -13,7 +13,7 @@ It assumes you have a test environment setup to dive right in, if you don't know
 ### How does it work?
 It will be a series of WordPress challenges organized from beginner--> intermediate--> expert.  
 The questions will be very specific to show you how useful WordPress can be.  
-The challenges will be step by step process found here http://wycks.github.com/WordPress--Challenge/ (temporary URL until it is ready)
+The challenges will be step by step process found [here]( http://wycks.github.com/WordPress--Challenge)(temporary URL until it is ready)  
 No answers will be supplied ( at least for now).  
 
 ### What do I need?
