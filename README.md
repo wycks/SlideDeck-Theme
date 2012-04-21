@@ -3,7 +3,7 @@ WordPress Challenge
 
 Test and improve your WordPress developer skills through a series of challenges.
 
-The questions are here [be here](https://github.com/wycks/WordPress--Challenge/blob/master/questions.md)
+The questions are [here](https://github.com/wycks/WordPress--Challenge/blob/master/questions.md) for now.
 
 ### Who is it for?  
 These challenges are targeted for developers, some knowledge of CSS/HTML/PHP will be required.  
