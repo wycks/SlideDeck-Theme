@@ -28,3 +28,8 @@ Download the sample data and import it into WordPress by clicking Tools -->Impor
 
 * Actual confirmation testing, maybe write a plugin that actually tests if a challenge is complete using a combination of javascript/ajax/php and some sort of persistent way to show it?  
 
+Ref:
+https://github.com/imakewebthings/deck.js
+https://github.com/Seldaek/slippy
+http://code.google.com/p/html5slides/
+
