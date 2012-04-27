@@ -1,3 +1,6 @@
+
+
+
 *  Install WordPress without using the 5 min install
 
 The first challenge is to install Wordpress on your local machine or remote site without using the famous 5 min install and without using the default wp_ database tables.
@@ -66,11 +69,18 @@ We dont want some lame static html, lets alter the title of the blog. Add the de
 *  Something with loop
 
 Have a look at the loop, intro to the loop, just spit out  <div>Hello</div> as a loop example.
+http://codex.wordpress.org/Global_Variables
 
 We will come back to this later with a real example.
 
 --------------------------
 
+
+* What is a Template Tag
+
+http://codex.wordpress.org/Stepping_Into_Template_Tags
+
+---------------------
 
 *  Page template
 
@@ -86,9 +96,10 @@ Style 2 pages differantly.
 
 ------------------
 
-*  Alter main loop
+*  Alter the main loop
 
 Simple example to later the main loop with the amount or something, or category.
+http://codex.wordpress.org/Separating_Categories
 
 ---------------
 
@@ -98,7 +109,7 @@ Something simple with title to show from previous example.
 
 -----------------
 
-*  Enqueue scripts
+*  Enqueue scripts  move this to intermediate?
 
 javascripts and styles done right.
 

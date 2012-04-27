@@ -30,17 +30,21 @@ The idea is to have about a total of 40 questions, with some sub-questions.
 * Some of this http://codex.wordpress.org/Function_Reference
 * wp_head and wp_footer
 * comment_template
+* get theme and plugin url
 * CPT and Custom taxonomies
 * Multiple different loops
 * Multiple same loops
 * Style every 3rth loop
 * WP Query
+* Custom walker for the nav menu
 * Shortcodes
-* Custom fields
+* Custom fields  
+
 
 
 # Advanced
 
+* add image upload
 * Transients
 * Hooks and filters
 * Create Widgets
