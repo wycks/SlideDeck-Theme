@@ -1,63 +1,130 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Wordpress Challenge by wycks</title>
-    
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Wordpress Challenge</h1>
-        <p>Test and improve your WordPress skills through a series of challenges.</p>
-        <p class="view"><a href="https://github.com/wycks/WordPress--Challenge">View the Project on GitHub <small>wycks/WordPress--Challenge</small></a></p>
-        <ul>
-          <li><a href="https://github.com/wycks/WordPress--Challenge/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/wycks/WordPress--Challenge/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/wycks/WordPress--Challenge">Fork On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Coming Soon</h3>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<!-- 
+TODO
+add effects
+add menu  toogle press "M"
+add syntax highlighter
+add hint hide thing? 
+make a logo
+-->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<head>
+  <meta charset="utf-8">
+  <title>WordPress Challenge</title>
+  <meta name="viewport" content="width=1024, user-scalable=no">
 
-<h3>Designer Templates</h3>
+  <!-- Deck.js -->
+  <link rel="stylesheet" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/deck.core.css" type="text/css">
+  <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/swiss.css">
+  <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/styles.css">
+  <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/deck.menu.css">
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+  <!-- Prettify -->
+  <link rel="stylesheet" id="style-theme-link" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/sunburst.css">
 
-<h3>Rather Drive Stick?</h3>
+  <!-- Replace path with correct path to Modernizr file. -->
+  <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>Authors and Contributors</h3>
+</head>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<body class="slidey" onload="prettyPrint();">
 
-<h3>Support or Contact</h3>
+  <header>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/wycks">wycks</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div class="menu">
+      menu
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    <p class="deck-status">
+    <span class="deck-status-current"></span>
+    /
+    <span class="deck-status-total"></span>
+    </p>
+
+  </header>
+
+
+<article class="deck-container">
+<!-- Create any number of elements with class slide within the container -->
+
+<section class="slide" id="ya">
+  <h1>Welcome to the beginner</h1>
+  <h2>this is h2</h2>
+  <h3>h3 what do you look like?</h3>
+  bla bla bla 1
+</section>
+
+<section class="slide" id="ya-2">
+  bla bla bla 2
+</section>
+<section class="slide" id="ya-3">
+  bla bla bla 3
+</section>
+
+<section class="slide" id="ya-4">
+  bla bla bla 4
+</section>
+
+<section class="slide" id="ya-5">
+  bla bla bla 5
+</section>
+
+<section class="slide" id="ya-6">
+  bla bla bla 6
+  <pre class="prettyprint">
     
-  </body>
+     
+ 
+      // testing
+      if ( get_post_meta($post->ID, 'thumb', true) ) :
+        a href="the_permalink() " rel="bookmark"
+         img class="thumb" src=" echo get_post_meta($post->ID, 'thumb', true) " alt="?php the_title(); " /
+        </a>
+  endif; 
+
+   
+  </pre>
+</section>
+
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+</article>
+
+
+<!-- jQuery. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!-- Deck.js  https://github.com/imakewebthings/deck.js -->
+<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.core.js"></script>
+<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.navigator.js"></script>
+<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.status.js"></script>
+<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.menu.js"></script>
+<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.hash.js"></script>
+<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.scale.js"></script>
+
+
+<!-- syntax highlighter http://code.google.com/p/google-code-prettify/-->
+<script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+
+  $('.menu').click(function(){
+   $.deck('toggleMenu')
+});
+</script>
+
+</body>
 </html>
