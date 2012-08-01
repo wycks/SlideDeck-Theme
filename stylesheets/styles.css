@@ -2,8 +2,9 @@
 .deck-container{
 width: auto;
 max-width: 864px;
-margin: 16px auto 24px auto;
-min-height: 560px;
+/*margin: 16px auto 24px auto;*/
+margin-left: 205px;
+/*min-height: 560px;*/
 font-size: 16px;
 -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -106,5 +107,29 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 /*Custom styles*/
 
 .slidey{
-  background-color: #E6E6E6;
+/*  margin-top: -15px;
+  margin-left: 0px;*/
+height: 100%;
+width: 100%;
+background: #111;
+}
+
+#sidebar{
+  float: left;
+  width:200px;
+  background-color: #111;
+  height:100%;
+  margin:0;
+  min-height: 100%;
+  position: absolute;
+  border-right:2px solid red;
+  color:#fff;
+}
+
+#nav-arrow{
+  float: right;
+  font-size:25px;
+  z-index:9999;
+  position: relative;
+  color:#fff;
 }

@@ -1,11 +1,13 @@
 .deck-container {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 1.75em;
-  background: #fff;
+/*  background: #fff;*/
+background-image:url('images/bg.jpg');
 }
 .deck-container .slide {
-  background: #fff;
-}
+  /*background: #fff;*/
+  
+  }
 .deck-container .slide h1 {
   color: #000;
 }
@@ -68,6 +70,7 @@
 }
 .deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
   color: #fff;
+  background-color: #027BFF;
 }
 .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
   background: #c00;
