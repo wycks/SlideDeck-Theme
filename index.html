@@ -26,7 +26,10 @@ make a logo
   <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/deck.menu.css">
 
   <!-- Prettify -->
-  <link rel="stylesheet" id="style-theme-link" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/sunburst.css">
+  <!-- <link rel="stylesheet" id="style-theme-link" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/sunburst.css"> -->
+<!--   <link rel="stylesheet" id="style-theme-link" href="http://demo.stanleyhlng.com/prettify-js/assets/themes/bootstrap-light/prettify.css"> -->
+  <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" />
+
 
   <!-- Replace path with correct path to Modernizr file. -->
   <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
@@ -36,75 +39,158 @@ make a logo
 
 <body class="slidey" onload="prettyPrint();">
 
-  
-
   <div id="sidebar"> 
     <div class="logo">
-      Logo
+      <div id="wp">WP</div>
+      <div id="challenge">Challenge</div>
+      
     </div>
 
-    <div class="menu">
-      menu
+    <div class="menu" id="main">
+      <h3>Menu</h3>
+      <ul>
+        <li>Aerial View</li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul>
+        <li>Beginner</li>
+        <li>Intermediate</li>
+        <li>Advanced</li>
+      </ul>
     </div>
 
-    <div class="menu">
-      hotkeys
+    <div class="menu" id="hot">
+      <h3>Hotkeys</h3>
+      <ul>
+        <li><b class="key">&#8592;</b> <b class="key">&#8594;</b></li>
+        <li><b class="key">Enter</b></li>
+        <li><b class="key">Space</b> <b class="key">Backspace</b></li>
+        
+      </ul>
     </div>
   
   </div> 
 
  
-<article class="deck-container">
-<!-- Create any number of elements with class slide within the container -->
 
-  <div id="nav-arrow">
+<!-- Create any number of elements with class slide within the container -->
+<div id="header">
+  <div id="nav-numbers">
+    <div id="circle">
+      <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+      </p>
+    </div>  
+    <div id="nav-arrows">
     <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
     <a href="#" class="deck-next-link" title="Next">&#8594;</a>
-    <p class="deck-status">
-    <span class="deck-status-current"></span>
-    /
-    <span class="deck-status-total"></span>
-    </p>
+    </div>
   </div>  
+</div>
 
-
+<article class="deck-container">
 <section class="slide" id="ya">
   <h2>this is h2</h2>
-  Welcome to the beginner
   <h3>h3 what do you look like?</h3>
-  bla bla bla 1
+   Welcome to the beginner bla bla bla 1
 </section>
 
 <section class="slide" id="ya-2">
+  <h2>this is h2</h2>
+  <h3>h3 what do you look like?</h3>
   bla bla bla 2
 </section>
 <section class="slide" id="ya-3">
+  <h2>this is h2</h2>
+  <h3>h3 what do you look like?</h3>
   bla bla bla 3
 </section>
 
 <section class="slide" id="ya-4">
+  <h2>this is h2</h2>
+  <h3>h3 what do you look like?</h3>
   bla bla bla 4
 </section>
 
 <section class="slide" id="ya-5">
+  <h2>this is h2</h2>
+  <h3>h3 what do you look like?</h3>
   bla bla bla 5
 </section>
 
 <section class="slide" id="ya-6">
+  <h2>this is h2</h2>
+  <h3>h3 what do you look like?</h3>
   bla bla bla 6
-  <pre class="prettyprint">
-    
-     
- 
-      // testing
-      if ( get_post_meta($post->ID, 'thumb', true) ) :
-        a href="the_permalink() " rel="bookmark"
-         img class="thumb" src=" echo get_post_meta($post->ID, 'thumb', true) " alt="?php the_title(); " /
-        </a>
-  endif; 
 
-   
-  </pre>
+  <pre class="prettyprint lang-php">
+    <code>
+          <div>
+            // Include jQuery from Google APIs.
+            if (!is_admin()) {
+                wp_deregister_script('jquery');
+                wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '1.7.1');
+                wp_enqueue_script('jquery');
+            }
+        
+function myFunction()
+{
+var x="";
+var time=new Date().getHours();
+if (time<20)
+  {
+  x="Good day";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+       
+  
+ </code>
+</pre>
+
+ <xmp class="prettyprint" id="htmlXmp"
+ ><html>
+   <head>
+     <title>Fibonacci number</title>
+   </head>
+   <body>
+     <noscript>
+       <dl>
+         <dt>Fibonacci numbers</dt>
+         <dd>1</dd>
+         <dd>1</dd>
+         <dd>2</dd>
+         <dd>3</dd>
+         <dd>5</dd>
+         <dd>8</dd>
+         &hellip;
+       </dl>
+     </noscript>
+
+     <script type="text/javascript"><!--
+ function fib(n) {
+   var a = 1, b = 1;
+   var tmp;
+   while (--n >= 0) {
+     tmp = a;
+     a += b;
+     b = tmp;
+   }
+   return a;
+ }
+
+ document.writeln(fib(10));
+ // -->
+     </script>
+   </body>
+ </html>
+ </xmp>
+
+  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
 </section>
 
 <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
@@ -120,11 +206,9 @@ make a logo
 <script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.status.js"></script>
 <script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.menu.js"></script>
 <script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.hash.js"></script>
-<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.scale.js"></script>
-
 
 <!-- syntax highlighter http://code.google.com/p/google-code-prettify/-->
-<script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
 
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
@@ -136,6 +220,9 @@ make a logo
   $('.menu').click(function(){
    $.deck('toggleMenu')
 });
+
+
+
 </script>
 
 </body>

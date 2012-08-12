@@ -2,21 +2,21 @@
   font-family: "Helvetica Neue", sans-serif;
   font-size: 1.75em;
 /*  background: #fff;*/
-background-image:url('images/bg.jpg');
+/*background-image:url('images/bg.jpg');*/
 }
 .deck-container .slide {
   /*background: #fff;*/
-  
+  color: #ddd;
   }
 .deck-container .slide h1 {
   color: #000;
 }
 .deck-container .slide h2 {
-  color: #c00;
-  border-bottom-color: #ccc;
+  color: #000;
+  border-bottom-color: #424242;
 }
 .deck-container .slide h3 {
-  color: #888;
+  color: #000;
 }
 .deck-container .slide pre {
 /*  border-color: #ccc;*/
@@ -69,16 +69,23 @@ background-image:url('images/bg.jpg');
   font-family: serif;
 }
 .deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
-  color: #fff;
-  background-color: #027BFF;
+  color: #21759b;
+  /*background-color: #027BFF;*/
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
-  background: #c00;
-  text-decoration: none;
+  /*background: #c00;*/
+  color: #fff;
+  
 }
 .deck-container .deck-status {
-  font-size: 0.6666em;
+  font-size: 0.6em;
+  padding-top: 12px;
+  padding-left: 5px;
 }
+
 .deck-container.deck-menu .slide {
   background: #eee;
 }

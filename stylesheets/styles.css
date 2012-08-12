@@ -1,16 +1,65 @@
-
-.deck-container{
-width: auto;
-max-width: 864px;
-/*margin: 16px auto 24px auto;*/
-margin-left: 205px;
-/*min-height: 560px;*/
-font-size: 16px;
--webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+body,html{
+  height:100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2C2C2C;
 }
 
+@font-face {
+    font-family: 'AftaserifRegular';
+    src: url('fonts/AftaSerifThin-Regular-webfont.eot');
+    src: url('fonts/AftaSerifThin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AftaSerifThin-Regular-webfont.woff') format('woff'),
+         url('fonts/AftaSerifThin-Regular-webfont.ttf') format('truetype'),
+         url('fonts/AftaSerifThin-Regular-webfont.svg#AftaserifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AftaserifItalic';
+    src: url('fonts/AftaSerifThin-Italic-webfont.eot');
+    src: url('fonts/AftaSerifThin-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AftaSerifThin-Italic-webfont.woff') format('woff'),
+         url('fonts/AftaSerifThin-Italic-webfont.ttf') format('truetype'),
+         url('fonts/AftaSerifThin-Italic-webfont.svg#AftaserifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+
+.logo{font-family: 'AftaserifRegular', Arial, sans-serif;}
+p.style1 {font: 18px/27px 'AftaserifRegular', Arial, sans-serif;}
+p.style2 {font: 18px/27px 'AftaserifItalic', Arial, sans-serif;}
+
+#wp{
+  font-size: 64px; 
+  padding-left: 40px;
+}
+
+#challenge{
+  font-size:32px;
+  padding-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+ }
+
+.deck-container{
+  width: auto;
+  max-width: 864px;
+  margin-left: 154px;
+  font-size: 16px;
+  overflow: visible;
+  height: 100%;
+  /*background-color: white;*/
+  padding-right: 0px;
+}
 
 /*vertical slide effect*/
 .csstransitions.csstransforms {
@@ -24,14 +73,21 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: transform 500ms ease-in-out;
 }
 .csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-color: white;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 48px;
+  padding-right: 20px;
+  -webkit-box-shadow: 8px 0px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 8px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 0px 5px rgba(0, 0, 0, 0.3);
+  padding-top: 46px;
+  padding-left: 20px;
+  color: #2C2C2C;
+  padding-bottom: 80px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 }
 .csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .slide {
   position: relative;
@@ -107,29 +163,116 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 /*Custom styles*/
 
 .slidey{
-/*  margin-top: -15px;
-  margin-left: 0px;*/
-height: 100%;
-width: 100%;
-background: #111;
+margin: 0;
+/*background: #111;*/
+/*background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/7cdfa7c49a04ead2ad82a9dbc6e8a20bd4cfaa05/skewed_print.png');*/
+background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/master/tiny_grid.png');
+
 }
 
 #sidebar{
   float: left;
   width:200px;
-  background-color: #111;
+  background-color: whiteSmoke;
   height:100%;
   margin:0;
   min-height: 100%;
-  position: absolute;
-  border-right:2px solid red;
-  color:#fff;
+  position: fixed;
+  border-right: 1px solid #EEE;
+  padding-right: 0px;
+  color:#2C2C2C;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  z-index: 9999;
 }
 
-#nav-arrow{
+#header{
+margin-left: 180px;
+max-width: 864px;
+}
+
+#nav-numbers{
   float: right;
-  font-size:25px;
+ /* font-size:25px;*/
   z-index:9999;
   position: relative;
   color:#fff;
 }
+
+#nav-numbers p{
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+#circle{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #21759b;
+  margin-left: 12px;
+}
+
+#nav-arrows{
+ margin-top: -5px;
+ font-size: 24px;
+}
+
+#nav-arrows a{
+color: #21759B;
+}
+
+.slide pre{
+  border: none;
+}
+
+
+.deck-menu{
+position: absolute;
+margin-top: 70px;
+width: 60%;
+}
+
+.menu{
+  width: 200px;
+  float: left;
+}
+
+.menu h3{
+font-size: 11px;
+font-weight: bold;
+line-height: 18px;
+color: #999;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+text-transform: uppercase;
+}
+
+.menu li{
+ord-wrap: break-word;
+}
+
+#main li:hover {
+text-decoration: none;
+background-color: #EEE;
+}
+
+.key{
+min-width: 18px;
+height: 18px;
+margin: 2px;
+padding: 2px;
+text-align: center;
+font: 14px/18px sans-serif;
+color: #777;
+background: #EFF0F2;
+border-top: 1px solid whiteSmoke;
+text-shadow: 0px 1px 0px whiteSmoke;
+-webkit-box-shadow: inset 0 0 25px #EEE, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333;
+-moz-box-shadow: inset 0 0 25px #eee, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+box-shadow: inset 0 0 25px #EEE, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333;
+display: inline-block;
+-moz-border-radius: 1px;
+border-radius: 1px;
+}
+.prettyprint { background-color: #FAD4FF; }
+.deck-container .slide h2{border-bottom: 2px solid #E9EDFA}
