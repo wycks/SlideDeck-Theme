@@ -28,11 +28,9 @@ body,html{
 
 }
 
-a{
-  text-decoration: none;
-  color: #2C2C2C;
-}
-
+a{text-decoration: none;color: #2C2C2C;}
+li a { display: block; }
+li a:hover { background-color: whitesmoke; }
 
 .logo{font-family: 'AftaserifRegular', Arial, sans-serif;}
 p.style1 {font: 18px/27px 'AftaserifRegular', Arial, sans-serif;}
@@ -47,12 +45,12 @@ p.style2 {font: 18px/27px 'AftaserifItalic', Arial, sans-serif;}
   font-size:32px;
   padding-left: 20px;
   margin-top: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
  }
 
 .deck-container{
   width: auto;
-  max-width: 864px;
+  max-width: 865px;
   margin-left: 154px;
   font-size: 16px;
   overflow: visible;
@@ -201,8 +199,9 @@ max-width: 864px;
 }
 
 #nav-numbers p{
-  padding-top: 10px;
-  padding-left: 5px;
+  padding-top: 11px;
+  padding-left: 6px;
+  font-size: 14px;
 }
 
 #circle{
@@ -210,7 +209,7 @@ max-width: 864px;
   width: 40px;
   height: 40px;
   background-color: #21759b;
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 #nav-arrows{
@@ -228,14 +227,43 @@ color: #21759B;
 
 
 .deck-menu{
-position: absolute;
-margin-top: 70px;
-width: 60%;
+
+font-size: 26px;
+padding-right: 10px;
+max-width: 810px;
+}
+
+.deck-menu .slide{
+
+}
+
+.csstransforms .deck-menu > .slide{
+  margin-top: 90px !important;
+  margin-left: 60px !important;
 }
 
 .menu{
   width: 200px;
   float: left;
+}
+
+#main li, #quest li{
+  background-color: #EEE;
+  margin-top: 1px;
+}
+
+#hot ul{
+ /* list-style-type: none;*/
+}
+
+#quest ul{
+  list-style-type: square;
+  color: #21759B;
+}
+
+#main ul, #extra ul, #hot ul{
+  list-style-type: square;
+  color: #C4C4C4;
 }
 
 .menu h3{
@@ -245,15 +273,11 @@ line-height: 18px;
 color: #999;
 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 text-transform: uppercase;
+padding-left: 25px;
 }
 
 .menu li{
 ord-wrap: break-word;
-}
-
-#main li:hover {
-text-decoration: none;
-background-color: #EEE;
 }
 
 .key{
@@ -276,3 +300,20 @@ border-radius: 1px;
 }
 .prettyprint { background-color: #FAD4FF; }
 .deck-container .slide h2{border-bottom: 2px solid #E9EDFA}
+
+#wp a:hover{
+  color:orange;
+}
+
+#wordpress{
+ float: left;
+margin-top: 150px;
+margin-left: 12px;
+}
+
+#sidebar iframe{
+width: 100px;
+height: 50px;
+margin-left: 12px;
+margin-top: 20px;  
+}

@@ -2,80 +2,95 @@
 <!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
-
-
-<!-- 
-TODO
-add effects
-add menu  toogle press "M"
-add syntax highlighter
-add hint hide thing? 
-make a logo
--->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
   <title>WordPress Challenge</title>
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <!-- Deck.js -->
-  <link rel="stylesheet" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/deck.core.css" type="text/css">
-  <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/swiss.css">
-  <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/styles.css">
-  <link rel="stylesheet" id="style-theme-link" href="http://dev.local/WordPress-Challenge/WordPress--Challenge/stylesheets/deck.menu.css">
+  <!-- Deck.js CSS-->
+  <link rel="stylesheet" href="stylesheets/deck.core.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/swiss.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/ui.totop.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/deck.menu.css" type="text/css">
 
-  <!-- Prettify -->
-  <!-- <link rel="stylesheet" id="style-theme-link" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/sunburst.css"> -->
-<!--   <link rel="stylesheet" id="style-theme-link" href="http://demo.stanleyhlng.com/prettify-js/assets/themes/bootstrap-light/prettify.css"> -->
-  <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" />
-
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="stylesheets/highlight-styles/github.css">
+  <script src="javascripts/highlight.pack.js"></script>
 
   <!-- Replace path with correct path to Modernizr file. -->
-  <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script> 
 
-
+  <!-- load highlight.js -->
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
-<body class="slidey" onload="prettyPrint();">
-
+<body class="slidey">
+  
+ 
   <div id="sidebar"> 
+
     <div class="logo">
-      <div id="wp">WP</div>
-      <div id="challenge">Challenge</div>
       
+        <div id="wp"><a href="#">WP</div>
+        <div id="challenge">Challenge</a></div>
+
     </div>
 
     <div class="menu" id="main">
       <h3>Menu</h3>
       <ul>
-        <li>Aerial View</li>
+        <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-      </ul>
-      <ul>
-        <li>Beginner</li>
-        <li>Intermediate</li>
-        <li>Advanced</li>
+        <li><a href="#" id="aerial">Toggle View</a></li>
       </ul>
     </div>
+
+    <div class="menu" id="quest">
+      <h3>Questions</h3>
+      <ul>
+        <li><a href="#">Beginner</a></li>
+        <li><a href="#">Intermediate</a></li>
+        <li><a href="#">Advanced</a></li>
+      </ul>
+    </div>
+      
+    <!--   add these later
+    <div class="menu" id="extra">  
+      <h3>Extras</h3>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+    </div> -->
 
     <div class="menu" id="hot">
       <h3>Hotkeys</h3>
       <ul>
         <li><b class="key">&#8592;</b> <b class="key">&#8594;</b></li>
         <li><b class="key">Enter</b></li>
-        <li><b class="key">Space</b> <b class="key">Backspace</b></li>
-        
+        <!-- <li><b class="key">Space</b> <b class="key">Backspace</b></li> -->
+        <li><b class="key">M</b></li>
+
       </ul>
     </div>
-  
+
+    <div id="wordpress">
+      <img src="img/wp-logo-2.png">
+    </div>
+
+    <iframe src="http://ghbtns.com/github-btn.html?user=wycks&repo=WordPress--Challenge&type=fork&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="53px" height="20px"></iframe>
+
+
   </div> 
 
- 
 
-<!-- Create any number of elements with class slide within the container -->
 <div id="header">
+
   <div id="nav-numbers">
+
     <div id="circle">
       <p class="deck-status">
       <span class="deck-status-current"></span>
@@ -83,13 +98,18 @@ make a logo
       <span class="deck-status-total"></span>
       </p>
     </div>  
+
     <div id="nav-arrows">
-    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
     </div>
-  </div>  
+
+  </div>
+
 </div>
 
+
+ <!-- Create any number of elements with class slide within the container -->
 <article class="deck-container">
 <section class="slide" id="ya">
   <h2>this is h2</h2>
@@ -102,6 +122,7 @@ make a logo
   <h3>h3 what do you look like?</h3>
   bla bla bla 2
 </section>
+
 <section class="slide" id="ya-3">
   <h2>this is h2</h2>
   <h3>h3 what do you look like?</h3>
@@ -123,77 +144,53 @@ make a logo
 <section class="slide" id="ya-6">
   <h2>this is h2</h2>
   <h3>h3 what do you look like?</h3>
-  bla bla bla 6
 
-  <pre class="prettyprint lang-php">
-    <code>
-          <div>
-            // Include jQuery from Google APIs.
-            if (!is_admin()) {
-                wp_deregister_script('jquery');
-                wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '1.7.1');
-                wp_enqueue_script('jquery');
-            }
-        
-function myFunction()
+But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+  
+<pre><code class="php">
+
+&lt;?php
+
+require_once 'Zend/Uri/Http.php';
+
+abstract class URI extends BaseURI
 {
-var x="";
-var time=new Date().getHours();
-if (time<20)
+P
+  /**
+   * Returns a URI
+   *
+   * @return  URI
+   */
+  static public function _factory($stats = array(), $uri = 'http')
   {
-  x="Good day";
+      $uri = explode(':', $uri, 2);
+      $schemeSpecific = isset($uri[1]) ? $uri[1] : '';
+      $desc = 'Multi
+line description';
+
+      // Security check
+      if (!ctype_alnum($scheme)) {
+          throw new Zend_Uri_Exception('Illegal scheme');
+      }
+
+      return [
+        'uri' => $uri,
+        'value' => null,
+      ];
   }
-document.getElementById("demo").innerHTML=x;
 }
 
-       
-  
- </code>
-</pre>
+__halt_compiler () ; datahere
+datahere
+datahere */
+datahere
 
- <xmp class="prettyprint" id="htmlXmp"
- ><html>
-   <head>
-     <title>Fibonacci number</title>
-   </head>
-   <body>
-     <noscript>
-       <dl>
-         <dt>Fibonacci numbers</dt>
-         <dd>1</dd>
-         <dd>1</dd>
-         <dd>2</dd>
-         <dd>3</dd>
-         <dd>5</dd>
-         <dd>8</dd>
-         &hellip;
-       </dl>
-     </noscript>
+?&gt;
 
-     <script type="text/javascript"><!--
- function fib(n) {
-   var a = 1, b = 1;
-   var tmp;
-   while (--n >= 0) {
-     tmp = a;
-     a += b;
-     b = tmp;
-   }
-   return a;
- }
-
- document.writeln(fib(10));
- // -->
-     </script>
-   </body>
- </html>
- </xmp>
-
-  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+</code></pre>
 </section>
 
-<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+<a href="." title="Permalink to this slide" class="deck-permalink">#........</a>
 </article>
 
 
@@ -201,29 +198,47 @@ document.getElementById("demo").innerHTML=x;
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <!-- Deck.js  https://github.com/imakewebthings/deck.js -->
-<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.core.js"></script>
-<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.navigator.js"></script>
-<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.status.js"></script>
-<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.menu.js"></script>
-<script src="http://dev.local/WordPress-Challenge/WordPress--Challenge/javascripts/deck/deck.hash.js"></script>
-
-<!-- syntax highlighter http://code.google.com/p/google-code-prettify/-->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
-
+<script src="javascripts/deck/deck.core.js"></script>
+<script src="javascripts/deck/deck.navigator.js"></script>
+<script src="javascripts/deck/deck.status.js"></script>
+<script src="javascripts/deck/deck.menu.js"></script>
+<script src="javascripts/deck/deck.hash.js"></script>
+<script src="javascripts/easing.js" type="text/javascript"></script>
+<!-- UItoTop plugin -->
+<script src="javascripts/jquery.ui.totop.min.js" type="text/javascript"></script>
+<!-- Starting the plugin -->
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
+
 <script>
   $(function() {
+
+    //deck slide
     $.deck('.slide');
   });
 
-  $('.menu').click(function(){
+    //toogle arial menu view
+  $('#aerial').click(function(){
    $.deck('toggleMenu')
 });
 
+  //add hotket 'm' to toggle menu
+  $.extend(true, $.deck.defaults, {
+   classes: {
+      menu: 'deck-menu'
+   },
 
-
+   keys: {
+      menu: 77 // 'm'
+   }
+});
 </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+  </script>
 
 </body>
 </html>
