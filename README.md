@@ -5,7 +5,7 @@ This was going to be a WordPress challange sorta thing, but the time where does 
 
 So now it's a full page slidedeck theme with code syntax support, a left-aligned menu and it looks pretty snazzy.
 
-It is hosted on github [here]( http://wycks.github.com/WordPress--Challenge)
+It is hosted on github [here]( http://wycks.github.com/SlideDeck-Theme/ )
 
 The files are in the `gh-pages` branch.
 
